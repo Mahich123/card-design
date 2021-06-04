@@ -1,0 +1,101 @@
+:root {
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+   }
+   
+   
+   * {
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+   }
+   body
+   button {
+       font-family: 'Lexend', sans-serif;
+     
+   }
+    p {
+       font-family: 'Big Shoulders Display', cursive;
+       font-size: 20px;
+       margin-bottom: 20px;
+       line-height: 1.6;
+   }
+   h1 {
+       margin-bottom: 15px;
+   }
+   .container {
+       padding: 20px;
+   }
+   .card {
+       padding: 30px;
+   }
+   
+   .bright-orange {
+     background-color: var(--bright-orange);
+     color: #fff;
+     border-radius: 10px 10px 0 0;
+   }
+   .bright-orange .btn {
+       color: var(--bright-orange);
+   }
+   .dark-cyan {
+       background-color: var(--dark-cyan);
+       color: #fff;
+   }
+   .dark-cyan .btn {
+       color: var(--dark-cyan);
+   }
+   .very-dark-cyan {
+       background-color: var(--very-dark-cyan);
+       color: #fff;
+       border-radius: 0 0 10px 10px;
+   }
+   .very-dark-cyan .btn{
+       color: var(--very-dark-cyan);
+   }
+   svg {
+       margin-bottom: 20px;
+   }
+   .btn {
+       border: 1px solid #fff;
+       border-radius: 30px;
+       padding: 10px 20px;
+       cursor: pointer;
+       transition: all .4s;
+   }
+   .btn:hover {
+       background-color: transparent;
+      color: #fff;
+   }
+   .attribution {
+        text-align: center;
+        margin-bottom: 1rem;
+   }
+   
+   @media(min-width: 900px) {
+       .container {
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           min-height: 100vh;
+           max-width: 932px;
+          margin: auto;
+       }
+       .bright-orange {
+           border-radius: 10px 0 0 10px;
+       }
+       .very-dark-cyan {
+           border-radius:  0 10px 10px 0;
+       }
+       .card {
+           padding: 50px;
+       }
+       .card p {
+           margin-bottom: 50px;
+       }
+       .attribution {
+        
+        margin-top: -1rem;
+   }
+    }
